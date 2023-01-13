@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Lato, Crimson Pro;
+  }
+
+  body {
+    @apply bg-primary text-secondary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.title {
+  @apply font-semibold text-[2rem];
+  font-family: Crimson Pro;
+}
+
+.product-code {
+  @apply font-light text-[0.625rem] opacity-80 uppercase;
+}
+
+.price {
+  @apply text-base opacity-80;
+}
