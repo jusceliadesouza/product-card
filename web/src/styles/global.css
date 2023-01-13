@@ -8,21 +8,51 @@
   }
 
   body {
-    @apply bg-primary text-secondary;
+    @apply bg-primary text-secondary min-h-screen flex items-center justify-center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 }
 
-.title {
-  @apply font-semibold text-[2rem];
-  font-family: Crimson Pro;
-}
+@layer components {
+  .product {
+    @apply flex gap-3;
+  }
 
-.product-code {
-  @apply font-light text-[0.625rem] opacity-80 uppercase;
-}
+  .product-image {
+    @apply flex flex-col max-w-md;
+  }
 
-.price {
-  @apply text-base opacity-80;
+  .product-image button {
+    @apply w-8;
+  }
+
+  .product-image button:hover {
+    @apply opacity-80;
+  }
+
+  .product-info {
+    @apply flex flex-col gap-5 items-start;
+  }
+
+  .title {
+    @apply font-semibold text-[2rem];
+    font-family: Crimson Pro;
+  }
+
+  .code {
+    @apply font-light text-[0.625rem] opacity-80 uppercase;
+  }
+
+  .price {
+    @apply text-base opacity-80;
+  }
+
+  .button {
+    @apply py-2 px-4 border border-secondary rounded-full text-xs uppercase transition duration-200 ease-out;
+  }
+
+  .button:hover {
+    @apply bg-secondary text-primary transition duration-200 ease-in;
+  }
 }
