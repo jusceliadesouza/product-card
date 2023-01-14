@@ -17,6 +17,12 @@ Você pode acessar o layout desse projeto por [aqui](https://www.figma.com/file/
 - TailwindCSS
 - ViteJS
 
+## Funcionalidades
+
+- [x] Visão 360°
+- [ ] Enviar informações do produto à cesta
+
+
 ## Como executar
 
 Para executar o projeto na sua máquina:
