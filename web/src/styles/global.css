@@ -24,7 +24,7 @@
   }
 
   .product-image button {
-    @apply w-8;
+    @apply w-9 ml-[81%] ;
   }
 
   .product-image button:hover {
