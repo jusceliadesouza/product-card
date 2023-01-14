@@ -49,7 +49,7 @@ function App() {
           <p className="price">{product.price}</p>
         </div>
 
-        <button className="button" onClick={handleActiveVision}>
+        <button className="button">
           Adicionar à cesta
         </button>
       </div>
